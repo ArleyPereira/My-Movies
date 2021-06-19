@@ -19,7 +19,7 @@ class RetrofitInstance {
 
         fun getAllMovies(): Call<MoviesAllRespose> {
             val endpoint = getRetrofitInstance().create(MovieDao::class.java)
-            return endpoint.getAllMovies(Credentials.API_KEY)
+            return endpoint.getAllMovies()
         }
 
     }

@@ -13,6 +13,6 @@ interface MovieRepository {
 
     fun deleteAllMovies()
 
-    fun getAllMovies(api_key: String): Call<MoviesAllRespose>
+    fun getAllMovies(): Call<MoviesAllRespose>
 
 }

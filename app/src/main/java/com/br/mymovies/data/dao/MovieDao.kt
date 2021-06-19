@@ -1,9 +1,10 @@
 package com.br.mymovies.data.dao
 
 import com.br.mymovies.data.entity.MoviesAllRespose
+import com.br.mymovies.network.Credentials.Companion.API_KEY
 import retrofit2.Call
 import retrofit2.http.GET
-import retrofit2.http.*
+import retrofit2.http.Query
 
 interface MovieDao {
 
@@ -19,7 +20,8 @@ interface MovieDao {
 
     @GET("movie/popular")
     fun getAllMovies(
-        @Query("api_key") api_key: String
+        @Query("api_key") api_key: String = API_KEY,
+        @Query("page") pages: Int = 2
     ): Call<MoviesAllRespose>
 
 }

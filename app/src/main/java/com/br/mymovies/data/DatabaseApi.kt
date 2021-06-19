@@ -15,8 +15,6 @@ class DatabaseApi {
                 if(response.code() == STATUS_OK){
                     val movies: List<Movie> = response.body()?.results ?: listOf()
                     sucess(movies)
-                } else {
-                    sucess(listOf())
                 }
             }
         }, { throwable ->
@@ -28,7 +26,6 @@ class DatabaseApi {
 
     companion object {
         val STATUS_OK = 200
-        val STATUS_ERROR = 400 or 401
     }
 
 }
