@@ -1,4 +1,4 @@
-package com.br.mymovies.data.dao
+package com.br.mymovies.data.service
 
 import com.br.mymovies.data.entity.MoviesAllRespose
 import com.br.mymovies.network.Credentials.Companion.API_KEY
@@ -6,7 +6,7 @@ import retrofit2.Call
 import retrofit2.http.GET
 import retrofit2.http.Query
 
-interface MovieDao {
+interface MoviesAllService {
 
     fun insert(movie: MoviesAllRespose): Long
 

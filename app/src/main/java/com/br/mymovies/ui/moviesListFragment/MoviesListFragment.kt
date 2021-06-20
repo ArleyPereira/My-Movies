@@ -5,7 +5,6 @@ import android.view.View
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.GridLayoutManager
 import com.br.mymovies.R
-import com.br.mymovies.repository.MovieRepository
 import kotlinx.android.synthetic.main.movies_list_fragment.*
 
 class MoviesListFragment : Fragment(R.layout.movies_list_fragment) {

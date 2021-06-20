@@ -26,7 +26,7 @@ class RetrofitInstance {
                 .build()
         }
 
-
+        val STATUS_OK = 200
 
     }
 
